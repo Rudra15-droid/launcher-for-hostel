@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+  color: white;
+}
+.center {
+  text-align: center;
+}
+#log-in-box {
+  border: 5%;
+  border-color: white;
+}
+.user {
+  align-items: center;
+  margin-left: 45%;
+}

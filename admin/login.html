@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/main.css">
+        <title>Admin Log-in Page</title>
+        <style>
+            #adminsvg {
+                color: white;
+                background-color: white;
+                width: 25%;
+                margin-left: 40%;
+            }
+
+            #hidden {
+                max-height: 0;
+                visibility: collapse;
+                margin-top: 10%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <img src="https://cdn2.iconfinder.com/data/icons/mobile-banking-ver-1a/100/1-11-512.png" alt="Admin"
+            id="adminsvg">
+        <h2 class="center">Admin Log-In</h2>
+        <form>
+            <input type="number" id="pin" maxlength="6" placeholder="Enter your 6 digit PIN">
+            <button type="button" onclick="checkpin()">Submit</button>
+            <div id="hidden"> <input required autocomplete="new-password" type="password" id="pswd"
+                    placeholder="Enter your password">
+                <button aria-required="true" type="submit" onclick="chkpwd()">Continue</button>
+            </div>
+        </form>
+
+    </body>
+    <script>
+        function checkpin() {
+            let inpu = document.getElementById('pin').value;
+            if (inpu == 152005) {
+                sessionStorage.setItem('adminin', "gethimin")
+            }
+        }
+    </script>
+
+</html>

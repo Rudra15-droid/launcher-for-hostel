@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/main.css">
+        <style>
+            body {
+                color: white;
+            }
+
+            .center-btn {
+                margin-left: 40%;
+                background-color: black;
+                color: white;
+            }
+
+        </style>
+        <title>Settings for user 2</title>
+    </head>
+
+    <body>
+        <h1 class="center">Settings for user 2</h1>
+
+
+        <h3 class="center" id="nameset">Your name is currently set to <span id="u2name"></span></h3>
+        <button id="usrnm2nd" class="center-btn" onclick="setusrnm2()">Change your name</button>
+
+    </body>
+    <script>
+        let usrnm2 = localStorage.getItem('usrnm2');
+        document.getElementById('u2name').innerText = usrnm2;
+    </script>
+    <script src="/god.js"></script>
+
+</html>

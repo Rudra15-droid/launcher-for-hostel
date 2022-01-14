@@ -5,11 +5,45 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            button {
+                background-color: black;
+                color: white;
+            }
+
+            .user {
+                margin-bottom: 15%;
+            }
+
+        </style>
         <title>Homepage</title>
     </head>
 
-    <body>
+    <body onload="fillnames()">
+        <h1 class="main center">Welcome</h1>
+        <h3 class="center">Please log-in to continue</h3>
 
+        <section id="log-in-box">
+            <div class="user" id="admin">
+                <button class="center">
+                    <h3 class="center">Admin</h3>
+                </button>
+            </div>
+            <div class="user" id="u1"><button class="center">
+                    <h3 class="center" id="u1txt"></h3>
+                </button></div>
+            <div class="user" id="u2"><button class="center">
+                    <h3 class="center" id="u2txt"></h3>
+                </button></div>
+            <div class="user" id="u3"><button class="center">
+                    <h3 class="center" id="u3txt"></h3>
+                </button></div>
+            <div class="user" id="u4"><button class="center">
+                    <h3 class="center" id="u4txt"></h3>
+                </button></div>
+        </section>
     </body>
+    <script src="security.js"></script>
 
 </html>
