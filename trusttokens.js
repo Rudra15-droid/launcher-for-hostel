@@ -10,6 +10,24 @@ function generateString(length) {
     return result;
 }
 
+//Log ins
+function setpwd1() {
+    let newpwd1 = prompt('Set your new password')
+    localStorage.setItem('setpwd1', newpwd1);
+}
+function setpwd2() {
+    let newpwd2 = prompt('Set your new password')
+    localStorage.setItem('setpwd2', newpwd2);
+}
+function setpwd3() {
+    let newpwd3 = prompt('Set your new password')
+    localStorage.setItem('setpwd3', newpwd3);
+}
+function setpwd4() {
+    let newpwd4 = prompt('Set your new password')
+    localStorage.setItem('setpwd4', newpwd4);
+}
+
 //For User 1
 let vrfcd1= generateString(16);
 function getpwd1() {
