@@ -21,6 +21,20 @@
                 margin-bottom: 10%;
             }
 
+            ul {
+                list-style: none;
+            }
+
+            .wrap {
+                display: flex;
+                margin-left: 20%;
+
+            }
+
+            .left-space {
+                margin-left: 20%;
+            }
+
         </style>
         <title>Settings for user 1</title>
     </head>
@@ -49,6 +63,32 @@
             <button class="center-btn meh" onclick="setigsp1()">
                 <h4 class="center">Set Insta Speedial</h4>
             </button>
+
+        </div>
+        <hr>
+        <div class="eleprefs">
+            <h2 class="center">Turn off unwanted elements on your homepage</h2>
+
+
+            <h4 class="center">Speed Dial</h4>
+            <div class="wrap">
+                <h3 id="sdon" onclick="showsd1()">Show</h3>
+                <h3 id="sdoff" class="left-space">Don't show</h3>
+            </div>
+            <hr>
+            <h4 class="center">Social Media Shortcuts</h4>
+            <div class="wrap">
+                <h3 id="socon">Show</h3>
+                <h3 id="socoff" class="left-space">Don't Show</h3>
+            </div>
+            <hr>
+            <h4 class="center">Weather</h4>
+            <div class="wrap">
+                <h3 id="weaon">Show</h3>
+                <h3 id="weaoff" class="left-space">Don't Show</h3>
+            </div>
+
+
 
         </div>
 

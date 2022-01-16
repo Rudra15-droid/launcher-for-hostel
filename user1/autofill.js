@@ -22,4 +22,38 @@ function setspddial1(){
 
     let waspdrtr1= localStorage.getItem("waspd1")
     document.getElementById('u1wasp').href= "https://wa.me/+91"+ waspdrtr1;
+
+    let igsprtr1= localStorage.getItem('igspd1')
+    document.getElementById('u1igsp').href= "https://instagram.com/"+ igsprtr1;
+}
+
+// Set Elements onload homepage
+
+
+function elehom(){
+    let shwspd= localStorage.getItem('showspd1')
+    if (shwspd=="show"){
+        console.log("Showing SpeedDial")
+    }else{
+        let spdsure= document.getElementById('spd1')
+        spdsure.style.display="none"
+    }
+
+}
+//Set colors onloading Settings
+
+
+
+
+//Set prefs
+function showsd1(){
+    localStorage.setItem('showspd1', 'show')
+    alert('Speeddial Toggled On!')
+}
+
+
+// Logout
+function logout1(){
+    sessionStorage.removeItem('u1verif')
+    window.location.replace("/index.html")
 }

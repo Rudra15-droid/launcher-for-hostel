@@ -19,3 +19,13 @@ body {
 .icon {
   margin-right: 20px;
 }
+a {
+  cursor: pointer;
+  color: white;
+}
+li {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
