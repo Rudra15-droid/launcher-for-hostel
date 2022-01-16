@@ -30,16 +30,7 @@ function setspddial1(){
 // Set Elements onload homepage
 
 
-function elehom(){
-    let shwspd= localStorage.getItem('showspd1')
-    if (shwspd=="show"){
-        console.log("Showing SpeedDial")
-    }else{
-        let spdsure= document.getElementById('spd1')
-        spdsure.style.display="none"
-    }
 
-}
 //Set colors onloading Settings
 
 
