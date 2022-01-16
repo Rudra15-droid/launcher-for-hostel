@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/main.css">
+        <style>
+            .time {
+                max-height: 80px;
+                display: flex;
+            }
+
+            a {
+                color: white;
+            }
+
+        </style>
+        <title>Homepage for user 2</title>
+    </head>
+
+    <body onload="checkttu2()">
+        <header>
+            <div class="time">
+                <a href="https://time.is/Hyderabad" id="time_is_link" rel="nofollow" style="font-size:36px">Time in
+                    Hyderabad:</a>
+                <span id="Hyderabad_z424" style="font-size:36px"></span>
+                <script src="//widget.time.is/t.js"></script>
+                <script>
+                    time_is_widget.init({ Hyderabad_z424: {} });
+                </script>
+
+            </div>
+        </header>
+        <hr>
+        <h1 class="center">Welcome back, <span id="u2txt"></span></h1>
+    </body>
+    <script>
+
+        let fill2 = localStorage.getItem('usrnm2')
+        let u2fill = document.getElementById('u2txt');
+        u2fill.innerText = fill2;
+
+    </script>
+    <script src="/trusttokens.js"></script>
+    <script src="/time.js"></script>
+    <script src="/fillnames.js"></script>
+
+</html>

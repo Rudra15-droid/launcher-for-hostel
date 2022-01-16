@@ -1,4 +1,4 @@
-function fillnames(){
+
     console.log("Hey there user. Welcome to the site :)");
     console.log("Filling names in empty divs");
 
@@ -18,7 +18,7 @@ function fillnames(){
     let u4fill= document.getElementById('u4txt');
     u4fill.innerText= fill4;
 
-}
+
 // Reject logins without Trust Tokens
 
 

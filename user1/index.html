@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/main.css">
         <style>
             .time {
@@ -16,11 +19,32 @@
                 color: white;
             }
 
+            i {
+                color: white;
+                font-size: 26px;
+            }
+
+            .fa-twitter:hover {
+                color: aqua;
+            }
+
+            .fa-youtube:hover {
+                color: red;
+            }
+
+            .fa-whatsapp {
+                font-size: 33px;
+            }
+
+            .fa-whatsapp:hover {
+                color: chartreuse;
+            }
+
         </style>
         <title>Homepage for user 1</title>
     </head>
 
-    <body onload="checkttu1()">
+    <body onload="checkttu1(); setspddial1()">
         <header>
             <div class="time">
                 <a href="https://time.is/Hyderabad" id="time_is_link" rel="nofollow" style="font-size:36px">Time in
@@ -34,10 +58,93 @@
             </div>
         </header>
         <hr>
-        <h1 class="center" onload="fillnames()">Welcome back, <span id="u1txt"></span></h1>
+        <h1 class="center">Welcome back, <span id="u1txt"></span></h1>
+        <div class="speeddial">
+            <h3 class="center">Speed dial</h3>
+            <div class="wrapper">
+                <a href="_blank" id="u1phsp"><i class="icon fas fa-phone"></i></a>
+                <a href="_blank" id="u1wasp"><i class="icon fab fa-whatsapp"></i></a>
+                <a href="_blank" id="u1igsp"><i class="fab fa-instagram icon"></i></a>
+            </div>
+        </div>
+        <div id="socials">
+            <hr>
+            <h3 class="center">Check out your socials</h3>
+            <div class="wrapper">
+                <a href="https://instagram.com" referrerpolicy="no-referrer"><i class="icon fab fa-instagram"></i></a>
+                <a href="https://twitter.com" referrerpolicy="no-referrer"><i class="icon fab fa-twitter"></i></a>
+                <a href="https://youtube.com" referrerpolicy="no-referrer"><i class="icon fab fa-youtube"></i></a>
+                <a href="https://news.google.com" referrerpolicy="no-referrer"><i class="fas fa-newspaper"></i></a>
+            </div>
+        </div>
+        <div class="weather">
+            <hr>
+            <h3 class="center">Weather in Hyderabad</h3>
+            <div id="e79117c814b07279b87090a5aaa7fe3e" class="ww-informers-box-854753">
+                <p class="ww-informers-box-854754"><a
+                        href="https://world-weather.info/forecast/india/hyderabad/">Weather in Hyderabad</a><br><a
+                        href="https://world-weather.info/forecast/usa/atlanta_1/">world-weather.info</a></p>
+            </div>
+            <script async type="text/javascript" charset="utf-8"
+                src="https://world-weather.info/wwinformer.php?userid=e79117c814b07279b87090a5aaa7fe3e"></script>
+            <style>
+                .ww-informers-box-854754 {
+                    -webkit-animation-name: ww-informers54;
+                    animation-name: ww-informers54;
+                    -webkit-animation-duration: 1.5s;
+                    animation-duration: 1.5s;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    -o-text-overflow: ellipsis;
+                    text-overflow: ellipsis;
+                    font-size: 12px;
+                    font-family: Arial;
+                    line-height: 18px;
+                    text-align: center
+                }
+
+                @-webkit-keyframes ww-informers54 {
+
+                    0%,
+                    80% {
+                        opacity: 0
+                    }
+
+                    100% {
+                        opacity: 1
+                    }
+                }
+
+                @keyframes ww-informers54 {
+
+                    0%,
+                    80% {
+                        opacity: 0
+                    }
+
+                    100% {
+                        opacity: 1
+                    }
+                }
+
+            </style>
+        </div>
+        <script async src="https://srv2.weatherwidget.org/js/?id=ww_65467401"></script>
+        </div>
     </body>
+    <script>
+
+        let fill1 = localStorage.getItem('usrnm1')
+        let u1fill = document.getElementById('u1txt');
+        u1fill.innerText = fill1;
+
+        let phspdrtr1 = localStorage.getItem('phpref1')
+        console.log("Setting phone speeddial to " + phspdrtr1)
+        document.getElementById('u1phsp').href = "callto:+91" + phspdrtr1;
+    </script>
+    <script src="autofill.js"></script>
     <script src="/trusttokens.js"></script>
     <script src="/time.js"></script>
-    <script src="/security.js"></script>
+    <script src="/fillnames.js"></script>
 
 </html>

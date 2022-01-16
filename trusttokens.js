@@ -44,6 +44,7 @@ function getpwd1() {
         alert("Wrong password");
     }
 }
+//Security check
 function checkttu1(){
     console.log("Running log-in check")
     let checkttcode= sessionStorage.getItem('u1verif');
@@ -55,3 +56,55 @@ function checkttu1(){
 }
 
 //User 1 End
+
+// User 2
+function getpwd2() {
+    let asetpwd2 = localStorage.getItem('setpwd2');
+
+    let gvnpwd2 = prompt("Enter your password")
+
+    if (gvnpwd2 == asetpwd2) {
+        alert("Successful login. 32bit Encrypted Code ****************"+vrfcd1)
+        sessionStorage.setItem('u2verif', "succverif")
+        console.log("Successful login with trust code set to " + vrfcd1)
+        window.location.replace("/user2/index.html")
+    } else {
+        alert("Wrong password");
+    }
+}
+
+function checkttu2(){
+    console.log("Running log-in check")
+    let checkttcode= sessionStorage.getItem('u2verif');
+    if (checkttcode=="succverif"){
+        console.log("Login verified")
+    }else{
+        window.location.replace("/index.html");
+    }
+}
+
+//User 3
+function getpwd3() {
+    let asetpwd3 = localStorage.getItem('setpwd3');
+
+    let gvnpwd3 = prompt("Enter your password")
+
+    if (gvnpwd3 == asetpwd3) {
+        alert("Successful login. 32bit Encrypted Code ****************"+vrfcd1)
+        sessionStorage.setItem('u3verif', "succverif")
+        console.log("Successful login with trust code set to " + vrfcd1)
+        window.location.replace("/user3/index.html")
+    } else {
+        alert("Wrong password");
+    }
+}
+
+function checkttu3(){
+    console.log("Running log-in check")
+    let checkttcode= sessionStorage.getItem('u3verif');
+    if (checkttcode=="succverif"){
+        console.log("Login verified")
+    }else{
+        window.location.replace("/index.html");
+    }
+}

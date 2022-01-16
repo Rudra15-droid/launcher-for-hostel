@@ -12,9 +12,13 @@
             }
 
             .center-btn {
-                margin-left: 40%;
+                margin-left: 30%;
                 background-color: black;
                 color: white;
+            }
+
+            .meh {
+                margin-bottom: 10%;
             }
 
         </style>
@@ -22,7 +26,7 @@
     </head>
 
     <body onload="checkttu1()">
-        <h1 class="center">Settings for user 1</h1>
+        <h1 class="center">Settings for <span id="u1txt"></span></h1>
 
 
         <h3 class="center" id="nameset">Your name is currently set to <span id="u1name"></span></h3>
@@ -30,6 +34,20 @@
         <hr>
         <h3 class="center" id="pwdset">Click the button below to change your password</h3>
         <button id="pwdset1" class="center-btn" onclick="setpwd1()">Change your password now</button>
+        <hr>
+        <div id="spedprefs">
+
+
+            <h2 class="center">Speed-dial Preferences</h2>
+
+            <button class="center-btn meh" onclick="setphspd1()">
+                <h4 class="center">Set Phone Speedial</h4>
+            </button>
+            <button class="center-btn meh" onclick="setwaspd1()">
+                <h4 class="center">Set WhatsApp Speedial</h4>
+            </button>
+
+        </div>
 
     </body>
     <script>
@@ -39,7 +57,8 @@
 
     </script>
     <script src="/god.js"></script>
-    <script src="/security.js"></script>
+    <script src="/fillnames.js"></script>
     <script src="/trusttokens.js"></script>
+    <script src="autofill.js"></script>
 
 </html>

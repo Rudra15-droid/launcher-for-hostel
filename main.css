@@ -13,3 +13,9 @@ body {
   align-items: center;
   margin-left: 45%;
 }
+.wrapper {
+  margin-left: 25%;
+}
+.icon {
+  margin-right: 20px;
+}
