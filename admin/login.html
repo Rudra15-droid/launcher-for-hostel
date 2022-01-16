@@ -29,7 +29,7 @@
             id="adminsvg">
         <h2 class="center">Admin Log-In</h2>
         <form>
-            <input type="number" id="pin" maxlength="6" placeholder="Enter your 6 digit PIN">
+            <input type="password" id="pin" maxlength="6" placeholder="Enter your 6 digit PIN">
             <button type="button" onclick="checkpin()">Submit</button>
             <div id="hidden"> <input required autocomplete="new-password" type="password" id="pswd"
                     placeholder="Enter your password">
@@ -43,6 +43,8 @@
             let inpu = document.getElementById('pin').value;
             if (inpu == 152005) {
                 sessionStorage.setItem('adminin', "gethimin")
+                alert("Log-in successful")
+                window.location.replace('index.html')
             }
         }
     </script>
