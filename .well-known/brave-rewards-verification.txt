@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: launcher107.netlify.app
+Token: 2c942051ee5394082a5e7acebe75d56d30d7abc6675cebb7fd3593d692e067e1
