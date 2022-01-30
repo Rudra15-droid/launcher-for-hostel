@@ -16,6 +16,17 @@ function setigsp1(){
 // Setting Speedial onload
 
 function setspddial1(){
+    let spd1= document.getElementById("spdcont1")
+let chckspd1= localStorage.getItem("showsp1")
+if (chckspd1=="no"){
+ spd1.style.display= "none"
+}
+let soc1= document.getElementById("soccont1")
+let chksoc1= localStorage.getItem("showsoc1")
+if (chksoc1== "no"){
+    soc1.style.display= "none"
+}
+
     let phspdrtr1= localStorage.getItem('phpref1')
     document.getElementById('u1phsp').href= "callto:+91"+ phspdrtr1;
 
@@ -38,7 +49,11 @@ function setspddial1(){
 
 //Set prefs
 function showsd1(){
-  document.cookie= "showspd=yes"
+  localStorage.setItem('showsp1', 'yes')
+}
+function hidesd1(){
+    localStorage.setItem('showsp1', 'no')
+    
 }
 
 

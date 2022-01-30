@@ -19,13 +19,7 @@ body {
 .icon {
   margin-right: 20px;
 }
-<<<<<<< HEAD
-a {
-  cursor: pointer;
-  color: white;
-}
-li {
+
+button {
   cursor: pointer;
 }
-=======
->>>>>>> parent of 63c1a45 (Minor Updates)

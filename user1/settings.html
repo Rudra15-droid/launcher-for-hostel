@@ -66,16 +66,49 @@
                 <h3 class="center">Speedial</h3>
                 <div class="wrap">
                     <h4 id="spdyes" onclick="showsd1()">Show</h4>
-                    <h4 id="spdno" class="leftsp">Don't Show</h4>
+                    <h4 id="spdno" class="leftsp" onclick="hidesd1()">Don't Show</h4>
+                </div>
+            </div>
+            <div id="socprfset">
+                <h3 class="center">Socials</h3>
+                <div class="wrap">
+                    <h4 onclick="showsoc1()" id="socyes">Show</h4>
+                    <h4 class="leftsp" onclick="hidesoc1()" id="socno">Don't show</h4>
                 </div>
             </div>
         </div>
     </body>
     <script>
+
+
         let usrnm1 = localStorage.getItem('usrnm1');
         document.getElementById('u1name').innerText = usrnm1;
 
+        // Set colors of Speedial Prefs
+        let showspd1 = localStorage.getItem('showsp1')
+        if (showspd1 == "yes") {
+            document.getElementById('spdyes').style.color = "green"
+        } else if (showspd1 == "no") {
+            document.getElementById("spdno").style.color = "red"
+        }
 
+        //Set Colors of Socials pref
+        let showsoc1 = localStorage.getItem("showsoc1")
+        if (showsoc1 == "yes") {
+            document.getElementById('socyes').style.color = "green"
+        } else if (showsoc1 == "no") {
+            document.getElementById('socno').style.color = "red"
+        }
+
+    </script>
+    <script>
+        //Random 
+        function showsoc1() {
+            localStorage.setItem("showsoc1", 'yes')
+        }
+        function hidesoc1() {
+            localStorage.setItem("showsoc1", "no")
+        }
     </script>
     <script src="/god.js"></script>
     <script src="/fillnames.js"></script>
