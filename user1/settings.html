@@ -21,6 +21,15 @@
                 margin-bottom: 10%;
             }
 
+            .wrap {
+                display: flex;
+                margin-left: 25%;
+            }
+
+            .leftsp {
+                margin-left: 25%;
+            }
+
         </style>
         <title>Settings for user 1</title>
     </head>
@@ -51,7 +60,16 @@
             </button>
 
         </div>
-
+        <hr>
+        <div class="prefs" id="eleprefs">
+            <div id="spdprfset">
+                <h3 class="center">Speedial</h3>
+                <div class="wrap">
+                    <h4 id="spdyes" onclick="showsd1()">Show</h4>
+                    <h4 id="spdno" class="leftsp">Don't Show</h4>
+                </div>
+            </div>
+        </div>
     </body>
     <script>
         let usrnm1 = localStorage.getItem('usrnm1');

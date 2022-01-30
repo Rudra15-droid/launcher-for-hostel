@@ -22,7 +22,6 @@ function setspddial1(){
 
     let waspdrtr1= localStorage.getItem("waspd1")
     document.getElementById('u1wasp').href= "https://wa.me/+91"+ waspdrtr1;
-<<<<<<< HEAD
 
     let igsprtr1= localStorage.getItem('igspd1')
     document.getElementById('u1igsp').href= "https://instagram.com/"+ igsprtr1;
@@ -39,8 +38,7 @@ function setspddial1(){
 
 //Set prefs
 function showsd1(){
-    localStorage.setItem('showspd1', 'show')
-    alert('Speeddial Toggled On!')
+  document.cookie= "showspd=yes"
 }
 
 
@@ -48,6 +46,4 @@ function showsd1(){
 function logout1(){
     sessionStorage.removeItem('u1verif')
     window.location.replace("/index.html")
-=======
->>>>>>> parent of 63c1a45 (Minor Updates)
 }
